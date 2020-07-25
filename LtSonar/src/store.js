@@ -8,6 +8,11 @@ import Axios from "axios"
 
 Vue.use( Vuex, Axios )
 
+import * as firebase from "firebase/app"
+
+import "firebase/auth"
+import "firebase/firestore"
+
 // Modules
 import ModelStore from '@/store/modelStore'
 import PlayerStore from '@/store/playerStore'
@@ -16,6 +21,7 @@ import EngineerStore from '@/store/EngineerStore'
 import RecordStore from '@/store/RecordStore'
 import ChatStore from '@/store/ChatStore'
 import GameStore from '@/store/GameStore'
+import Connection from "@/store/Connection"
 
 // Store with modules
 const store = new Vuex.Store({
